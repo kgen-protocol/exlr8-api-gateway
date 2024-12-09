@@ -8,7 +8,7 @@ import (
 
 func NewRoutes() http.Handler {
 	router := chi.NewRouter()
-	router.Get("/health", func(w http.ResponseWriter, r *http.Request) {
+	router.Get("/", func(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte("API Gateway is running"))
 	})
 
